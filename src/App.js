@@ -1,24 +1,33 @@
 import React from 'react';
-import logo from './logo.svg';
+import logo from './assets/logo.webp';
 import './App.css';
+
+const gradients = [
+  ['#bd19d6', '#ea7d10'],
+  ['#ff2121', '#25c668']
+];
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+      <div className="App-header">
+        <div
+          style={{
+            alignItems: 'center',
+            justifyContent: 'center',
+            marginBlockStart: 0,
+            marginBlockEnd: 0
+          }}
         >
-          Learn React
-        </a>
-      </header>
+          <div className="title">
+            <img src={logo} className="logo" />
+            <p className="title-style">Pastie</p>
+          </div>
+          <p style={{ fontSize: 80, fontFamily: 'Avenir-Regular' }}>
+            Coming soon...
+          </p>
+        </div>
+      </div>
     </div>
   );
 }
